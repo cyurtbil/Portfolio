@@ -54,6 +54,42 @@ table {
   border-spacing: 0;
 }
 
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+}
+@-moz-keyframes rotation {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+}
 /* line 1, ../sass/partials/_base.sass */
 body {
   background: url(../images/black_linen_v2.png) no-repeat center center fixed;
@@ -66,20 +102,40 @@ body {
 /* line 8, ../sass/partials/_base.sass */
 header {
   width: 100%;
-  height: 450px;
+  height: 600px;
   background-color: rgba(0, 0, 0, 0.31);
 }
 /* line 12, ../sass/partials/_base.sass */
+header #social-media-wrapper {
+  position: relative;
+  text-align: center;
+  top: 105px;
+}
+/* line 16, ../sass/partials/_base.sass */
+header #social-media-wrapper a {
+  margin: 15px;
+}
+/* line 18, ../sass/partials/_base.sass */
+header #social-media-wrapper a img:hover {
+  cursor: pointer;
+  -webkit-animation: rotation 0.5s;
+  -moz-animation: rotation 0.5s;
+  animation: rotation 0.5s;
+}
+/* line 21, ../sass/partials/_base.sass */
 header img {
+  position: relative;
+}
+/* line 23, ../sass/partials/_base.sass */
+header img[alt="Cenk Yurtbilir"] {
   height: 250px;
   width: 250px;
   border: 1px solid black;
   border-radius: 50%;
-  position: relative;
   left: 40%;
   top: 70px;
 }
-/* line 20, ../sass/partials/_base.sass */
+/* line 30, ../sass/partials/_base.sass */
 header h1 {
   color: rgba(255, 255, 255, 0.74);
   font-size: 1.7em;
@@ -87,27 +143,27 @@ header h1 {
   text-align: center;
   top: 80px;
 }
-/* line 26, ../sass/partials/_base.sass */
+/* line 36, ../sass/partials/_base.sass */
 header p {
   color: rgba(255, 255, 255, 0.74);
   position: relative;
   display: inline-block;
   font-size: 1.2em;
 }
-/* line 31, ../sass/partials/_base.sass */
+/* line 41, ../sass/partials/_base.sass */
 header p:nth-child(2) {
   bottom: 100px;
 }
-/* line 33, ../sass/partials/_base.sass */
+/* line 43, ../sass/partials/_base.sass */
 header p:nth-child(3) {
   right: 45px;
 }
-/* line 35, ../sass/partials/_base.sass */
+/* line 45, ../sass/partials/_base.sass */
 header p:nth-child(4) {
   bottom: 100px;
   left: 395px;
 }
-/* line 38, ../sass/partials/_base.sass */
+/* line 48, ../sass/partials/_base.sass */
 header p:nth-child(5) {
   left: 242px;
 }

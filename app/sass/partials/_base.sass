@@ -7,16 +7,26 @@ body
 
 header
   width: 100%
-  height: 450px
+  height: 600px
   background-color: rgba(0, 0, 0, 0.31)
-  img
-    height: 250px
-    width: 250px
-    border: 1px solid black
-    border-radius: 50%
+  #social-media-wrapper
     position: relative
-    left: 40%
-    top: 70px
+    text-align: center
+    top: 105px
+    a
+      margin: 15px
+      img:hover
+        cursor: pointer
+        +animation(rotation, 0.5s)
+  img
+    position: relative
+    &[alt="Cenk Yurtbilir"]
+      height: 250px
+      width: 250px
+      border: 1px solid black
+      border-radius: 50%
+      left: 40%
+      top: 70px
   h1
     color: rgba(255, 255, 255, 0.74)
     font-size: 1.7em

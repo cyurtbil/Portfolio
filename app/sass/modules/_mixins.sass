@@ -1,0 +1,27 @@
+=magnify($size)
+  -webkit-transform: scale($size)
+  -moz-transform: scale($size)
+  transform: scale($size)
+
+=rotate($x, $y, $z)
+  -webkit-transform: rotateX($x) rotateY($y) rotateZ($z)
+  -moz-transform: rotateX($x) rotateY($y) rotateZ($z)
+  transform: rotateX($x) rotateY($y) rotateZ($z)
+
+=keyframe($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=animation($name, $time)
+  -webkit-animation: $name $time
+  -moz-animation: $name $time
+  animation: $name $time
+
+=transition($property, $duration, $timing)
+  -webkit-transition: $property $duration $timing
+  -moz-transition: $property $duration $timing
+  transition: $property $duration $timing
