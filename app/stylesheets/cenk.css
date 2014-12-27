@@ -91,6 +91,11 @@ table {
   }
 }
 /* line 1, ../sass/partials/_base.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/partials/_base.sass */
 body {
   background: url(../images/black_linen_v2.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -99,34 +104,39 @@ body {
   background-size: cover;
 }
 
-/* line 8, ../sass/partials/_base.sass */
+/* line 11, ../sass/partials/_base.sass */
 header {
   width: 100%;
   height: 600px;
   background-color: rgba(0, 0, 0, 0.31);
 }
-/* line 12, ../sass/partials/_base.sass */
+/* line 15, ../sass/partials/_base.sass */
 header #social-media-wrapper {
   position: relative;
   text-align: center;
-  top: 105px;
+  top: 155px;
 }
-/* line 16, ../sass/partials/_base.sass */
+/* line 19, ../sass/partials/_base.sass */
 header #social-media-wrapper a {
   margin: 15px;
 }
-/* line 18, ../sass/partials/_base.sass */
+/* line 21, ../sass/partials/_base.sass */
+header #social-media-wrapper a img {
+  width: 100px;
+  height: 100px;
+}
+/* line 24, ../sass/partials/_base.sass */
 header #social-media-wrapper a img:hover {
   cursor: pointer;
   -webkit-animation: rotation 0.5s;
   -moz-animation: rotation 0.5s;
   animation: rotation 0.5s;
 }
-/* line 21, ../sass/partials/_base.sass */
+/* line 27, ../sass/partials/_base.sass */
 header img {
   position: relative;
 }
-/* line 23, ../sass/partials/_base.sass */
+/* line 29, ../sass/partials/_base.sass */
 header img[alt="Cenk Yurtbilir"] {
   height: 250px;
   width: 250px;
@@ -135,35 +145,40 @@ header img[alt="Cenk Yurtbilir"] {
   left: 40%;
   top: 70px;
 }
-/* line 30, ../sass/partials/_base.sass */
+/* line 36, ../sass/partials/_base.sass */
 header h1 {
   color: rgba(255, 255, 255, 0.74);
   font-size: 1.7em;
   position: relative;
   text-align: center;
-  top: 80px;
+  top: 120px;
 }
-/* line 36, ../sass/partials/_base.sass */
-header p {
+/* line 42, ../sass/partials/_base.sass */
+header #properties {
+  text-align: center;
+}
+/* line 44, ../sass/partials/_base.sass */
+header #properties p {
   color: rgba(255, 255, 255, 0.74);
   position: relative;
   display: inline-block;
   font-size: 1.2em;
 }
-/* line 41, ../sass/partials/_base.sass */
-header p:nth-child(2) {
+/* line 49, ../sass/partials/_base.sass */
+header #properties p:nth-child(1) {
   bottom: 100px;
+  right: 10%;
 }
-/* line 43, ../sass/partials/_base.sass */
-header p:nth-child(3) {
-  right: 45px;
+/* line 52, ../sass/partials/_base.sass */
+header #properties p:nth-child(2) {
+  right: 16%;
 }
-/* line 45, ../sass/partials/_base.sass */
-header p:nth-child(4) {
+/* line 54, ../sass/partials/_base.sass */
+header #properties p:nth-child(3) {
   bottom: 100px;
-  left: 395px;
+  left: 11%;
 }
-/* line 48, ../sass/partials/_base.sass */
-header p:nth-child(5) {
-  left: 242px;
+/* line 57, ../sass/partials/_base.sass */
+header #properties p:nth-child(4) {
+  left: 8%;
 }

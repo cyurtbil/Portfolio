@@ -1,3 +1,6 @@
+*
+  box-sizing: border-box
+
 body
   background: url(../images/black_linen_v2.png) no-repeat center center fixed
   -webkit-background-size: cover
@@ -12,12 +15,15 @@ header
   #social-media-wrapper
     position: relative
     text-align: center
-    top: 105px
+    top: 155px
     a
       margin: 15px
-      img:hover
-        cursor: pointer
-        +animation(rotation, 0.5s)
+      img
+        width: 100px
+        height: 100px
+        &:hover
+          cursor: pointer
+          +animation(rotation, 0.5s)
   img
     position: relative
     &[alt="Cenk Yurtbilir"]
@@ -32,18 +38,21 @@ header
     font-size: 1.7em
     position: relative
     text-align: center
-    top: 80px
-  p
-    color: rgba(255, 255, 255, 0.74)
-    position: relative
-    display: inline-block
-    font-size: 1.2em
-    &:nth-child(2)
-      bottom: 100px
-    &:nth-child(3)
-      right: 45px
-    &:nth-child(4)
-      bottom: 100px
-      left: 395px
-    &:nth-child(5)
-      left: 242px
+    top: 120px
+  #properties
+    text-align: center
+    p
+      color: rgba(255, 255, 255, 0.74)
+      position: relative
+      display: inline-block
+      font-size: 1.2em
+      &:nth-child(1)
+        bottom: 100px
+        right: 10%
+      &:nth-child(2)
+        right: 16%
+      &:nth-child(3)
+        bottom: 100px
+        left: 11%
+      &:nth-child(4)
+        left: 8%
