@@ -63,19 +63,26 @@ header
     color: rgba(255, 255, 255, 0.74)
     text-align: center
     font-size: 1.7em
-  a
-    img
-      height: 320px
-      width: 100%
-      border: 1px solid rgb(43, 43, 43)
-      border-radius: 3px
-      margin: 14px 0px
-      box-shadow: 7px 6px 22px 2px black
-    #explanation
-      background-color: rgba(0, 0, 0, 0.7)
+  img
+    height: 320px
+    width: 100%
+    border: 1px solid rgb(43, 43, 43)
+    border-radius: 3px
+    margin: 14px 0px
+    box-shadow: 7px 6px 22px 2px black
+  .explanation
+    background-color: rgba(0, 0, 0, 0.7)
+    position: relative
+    bottom: 337px
+    height: 320px
+    p
+      color: rgba(255, 255, 255, 0.74)
       position: relative
-      bottom: 337px
-      height: 320px
-      p
-        text-align: center
-        color: rgba(255, 255, 255, 0.74)
+      top: 130px
+      display: inline
+      +transition(font-size, 0.3s, ease)
+      font-size: 1.5em
+      padding: 0px 23px
+      left: 29%
+      &:hover
+        font-size: 1.7em
