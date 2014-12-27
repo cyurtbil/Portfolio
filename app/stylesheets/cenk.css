@@ -200,6 +200,17 @@ header #properties p:nth-child(4) {
   border: 1px solid #2b2b2b;
   border-radius: 3px;
   margin: 14px 0px;
-  padding: 20px;
   box-shadow: 7px 6px 22px 2px black;
+}
+/* line 74, ../sass/partials/_base.sass */
+#projects a #explanation {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  bottom: 337px;
+  height: 320px;
+}
+/* line 79, ../sass/partials/_base.sass */
+#projects a #explanation p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.74);
 }
