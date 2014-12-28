@@ -183,38 +183,42 @@ header #properties p:nth-child(4) {
   left: 8%;
 }
 
-/* line 60, ../sass/partials/_base.sass */
-#projects {
-  margin: 90px 0px;
-}
-/* line 62, ../sass/partials/_base.sass */
+/* line 61, ../sass/partials/_base.sass */
 #projects h2 {
   color: rgba(255, 255, 255, 0.74);
   text-align: center;
   font-size: 1.7em;
 }
-/* line 66, ../sass/partials/_base.sass */
-#projects img {
+/* line 65, ../sass/partials/_base.sass */
+#projects .project {
+  height: 320px;
+}
+/* line 67, ../sass/partials/_base.sass */
+#projects .project img {
   height: 320px;
   width: 100%;
   border: 1px solid #2b2b2b;
   border-radius: 3px;
-  margin: 14px 0px;
   box-shadow: 7px 6px 22px 2px black;
 }
 /* line 73, ../sass/partials/_base.sass */
-#projects .explanation {
-  background-color: rgba(0, 0, 0, 0.7);
+#projects .project .explanation {
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  bottom: 337px;
+  bottom: 324px;
   height: 320px;
 }
 /* line 78, ../sass/partials/_base.sass */
-#projects .explanation p {
+#projects .project .explanation a {
+  text-decoration: none;
+}
+/* line 80, ../sass/partials/_base.sass */
+#projects .project .explanation a p {
   color: rgba(255, 255, 255, 0.74);
   position: relative;
   top: 130px;
   display: inline;
+  width: 100%;
   -webkit-transition: font-size 0.3s ease;
   -moz-transition: font-size 0.3s ease;
   transition: font-size 0.3s ease;
@@ -222,7 +226,7 @@ header #properties p:nth-child(4) {
   padding: 0px 23px;
   left: 29%;
 }
-/* line 87, ../sass/partials/_base.sass */
-#projects .explanation p:hover {
+/* line 90, ../sass/partials/_base.sass */
+#projects .project .explanation a p:hover {
   font-size: 1.7em;
 }
