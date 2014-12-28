@@ -3,18 +3,16 @@
 $(document).ready(function() {
 
 
-  // $('#musicwallet').stop(true, true).hover(function() {
-  //   $(this).css({
-  //     cursor: "pointer",
-  //     opacity: 0.5
-  //   });
-  //   $('#musicwallet a').stop(true, true).animate({opacity: 0});
-  // }, function() {
-  //   $(this).css({
-  //     opacity: 1
-  //   });
-  //   $('#musicwallet a').stop(true, true).animate({opacity: 1});
-  // });
+  $('#musicwallet').hover(function() {
+    $(this).children('.explanation').css({cursor: 'pointer'}).stop(true, true).slideDown(300);
+  }, function() {
+    $(this).children('.explanation').css({cursor: 'pointer'}).stop(true, true).slideUp(300);
+  });
 
+  $('#onmyplate').hover(function() {
+    $(this).children('.explanation').css({cursor: 'pointer'}).stop(true, true).slideDown(300);
+  }, function() {
+    $(this).children('.explanation').css({cursor: 'pointer'}).stop(true, true).slideUp(300);
+  });
 
 });
