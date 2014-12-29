@@ -187,12 +187,20 @@ header #properties p, footer #properties p {
   display: none;
 }
 /* line 67, ../sass/partials/_base.sass */
+#projects .project .explanation p {
+  color: white;
+  position: relative;
+  top: 180px;
+  padding: 0px 48px;
+  line-height: 1.5em;
+}
+/* line 73, ../sass/partials/_base.sass */
 #projects .project .explanation a {
   text-decoration: none;
 }
-/* line 69, ../sass/partials/_base.sass */
+/* line 75, ../sass/partials/_base.sass */
 #projects .project .explanation a p {
-  color: rgba(255, 255, 255, 0.74);
+  color: white;
   position: relative;
   top: 130px;
   display: inline;
@@ -204,43 +212,61 @@ header #properties p, footer #properties p {
   padding: 0px 23px;
   left: 29%;
 }
-/* line 79, ../sass/partials/_base.sass */
+/* line 85, ../sass/partials/_base.sass */
 #projects .project .explanation a p:hover {
   font-size: 1.7em;
 }
 
-/* line 83, ../sass/partials/_base.sass */
+/* line 89, ../sass/partials/_base.sass */
 #skills h1, #skills header #properties #developer, header #properties #skills #developer, #skills footer #properties #developer, footer #properties #skills #developer {
   text-align: center;
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.74);
-  margin-top: 100px;
+  margin-top: 80px;
 }
-/* line 89, ../sass/partials/_base.sass */
+/* line 95, ../sass/partials/_base.sass */
 #skills #languages img {
+  margin: 10px 0% 0px 12%;
+}
+/* line 98, ../sass/partials/_base.sass */
+#skills #frameworks a {
+  display: inline;
+  text-decoration: none;
+}
+/* line 101, ../sass/partials/_base.sass */
+#skills #frameworks a img {
   margin: 10px 0% 50px 12%;
 }
+/* line 103, ../sass/partials/_base.sass */
+#skills #frameworks a span {
+  font-style: italic;
+  position: relative;
+  color: white;
+  font-size: 3.2em;
+  bottom: 68px;
+  margin-left: 17.7%;
+}
 
-/* line 93, ../sass/partials/_base.sass */
+/* line 111, ../sass/partials/_base.sass */
 footer {
   height: 200px;
 }
-/* line 96, ../sass/partials/_base.sass */
+/* line 114, ../sass/partials/_base.sass */
 footer #social-media-wrapper {
   position: relative;
   text-align: center;
   top: 50px;
 }
-/* line 100, ../sass/partials/_base.sass */
+/* line 118, ../sass/partials/_base.sass */
 footer #social-media-wrapper a {
   margin: 15px;
 }
-/* line 102, ../sass/partials/_base.sass */
+/* line 120, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img {
   width: 100px;
   height: 100px;
 }
-/* line 105, ../sass/partials/_base.sass */
+/* line 123, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img:hover {
   cursor: pointer;
   -webkit-animation: rotation 0.5s;
