@@ -209,26 +209,38 @@ header #properties p, footer #properties p {
   font-size: 1.7em;
 }
 
-/* line 82, ../sass/partials/_base.sass */
+/* line 83, ../sass/partials/_base.sass */
+#skills h1, #skills header #properties #developer, header #properties #skills #developer, #skills footer #properties #developer, footer #properties #skills #developer {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.74);
+  margin-top: 100px;
+}
+/* line 89, ../sass/partials/_base.sass */
+#skills #languages img {
+  margin: 10px 0% 50px 12%;
+}
+
+/* line 93, ../sass/partials/_base.sass */
 footer {
   height: 200px;
 }
-/* line 85, ../sass/partials/_base.sass */
+/* line 96, ../sass/partials/_base.sass */
 footer #social-media-wrapper {
   position: relative;
   text-align: center;
   top: 50px;
 }
-/* line 89, ../sass/partials/_base.sass */
+/* line 100, ../sass/partials/_base.sass */
 footer #social-media-wrapper a {
   margin: 15px;
 }
-/* line 91, ../sass/partials/_base.sass */
+/* line 102, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img {
   width: 100px;
   height: 100px;
 }
-/* line 94, ../sass/partials/_base.sass */
+/* line 105, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img:hover {
   cursor: pointer;
   -webkit-animation: rotation 0.5s;

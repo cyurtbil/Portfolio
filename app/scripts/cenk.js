@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-
+  // Projects
   $('#musicwallet').hover(function() {
     $(this).children('.explanation').css({cursor: 'pointer'}).stop(true, true).slideDown(300);
   }, function() {
@@ -14,5 +14,4 @@ $(document).ready(function() {
   }, function() {
     $(this).children('.explanation').css({cursor: 'pointer'}).stop(true, true).slideUp(300);
   });
-
 });
