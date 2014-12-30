@@ -247,29 +247,62 @@ header #properties p, footer #properties p {
   margin-left: 17.7%;
 }
 
-/* line 111, ../sass/partials/_base.sass */
+/* line 160, ../sass/partials/_base.sass */
 footer {
   height: 200px;
 }
-/* line 114, ../sass/partials/_base.sass */
+/* line 163, ../sass/partials/_base.sass */
 footer #social-media-wrapper {
   position: relative;
   text-align: center;
   top: 50px;
 }
-/* line 118, ../sass/partials/_base.sass */
+/* line 167, ../sass/partials/_base.sass */
 footer #social-media-wrapper a {
   margin: 15px;
 }
-/* line 120, ../sass/partials/_base.sass */
+/* line 169, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img {
   width: 100px;
   height: 100px;
 }
-/* line 123, ../sass/partials/_base.sass */
+/* line 172, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img:hover {
   cursor: pointer;
   -webkit-animation: rotation 0.5s;
   -moz-animation: rotation 0.5s;
   animation: rotation 0.5s;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 3, ../sass/partials/_smartphone.sass */
+  header img[alt="Cenk Yurtbilir"], footer img[alt="Cenk Yurtbilir"] {
+    left: 12.7%;
+  }
+
+  /* line 8, ../sass/partials/_smartphone.sass */
+  #projects .project img {
+    height: 231px;
+  }
+  /* line 10, ../sass/partials/_smartphone.sass */
+  #projects .project .explanation {
+    height: 231px;
+    bottom: 234px;
+  }
+  /* line 13, ../sass/partials/_smartphone.sass */
+  #projects .project .explanation p {
+    top: 37px;
+    padding: 0px 36px;
+  }
+  /* line 17, ../sass/partials/_smartphone.sass */
+  #projects .project .explanation a p {
+    top: 19px;
+    left: 15%;
+  }
+
+  /* line 24, ../sass/partials/_smartphone.sass */
+  footer #social-media-wrapper a img {
+    width: 55px;
+    height: 55px;
+  }
 }
