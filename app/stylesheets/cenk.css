@@ -152,16 +152,42 @@ header #properties p, footer #properties p {
 }
 
 /* line 44, ../sass/partials/_base.sass */
-#projects {
+#skills {
   margin: 50px 0px;
 }
 /* line 46, ../sass/partials/_base.sass */
-#projects h1, #projects header #properties #developer, header #properties #projects #developer, #projects footer #properties #developer, footer #properties #projects #developer {
+#skills h1, #skills header #properties #developer, header #properties #skills #developer, #skills footer #properties #developer, footer #properties #skills #developer {
   text-align: center;
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.74);
 }
 /* line 50, ../sass/partials/_base.sass */
+#skills #skills-container {
+  width: 100%;
+  height: 100px;
+}
+/* line 53, ../sass/partials/_base.sass */
+#skills #skills-container span {
+  float: left;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  color: rgba(255, 255, 255, 0.74);
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin-right: 1%;
+  margin-bottom: 10px;
+}
+
+/* line 63, ../sass/partials/_base.sass */
+#projects {
+  margin-bottom: 140px;
+}
+/* line 65, ../sass/partials/_base.sass */
+#projects h1, #projects header #properties #developer, header #properties #projects #developer, #projects footer #properties #developer, footer #properties #projects #developer {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.74);
+}
+/* line 69, ../sass/partials/_base.sass */
 #projects h2 {
   color: rgba(255, 255, 255, 0.74);
   text-align: center;
@@ -169,11 +195,11 @@ header #properties p, footer #properties p {
   margin-bottom: 16px;
   margin-top: 35px;
 }
-/* line 56, ../sass/partials/_base.sass */
+/* line 75, ../sass/partials/_base.sass */
 #projects .project {
   height: 320px;
 }
-/* line 58, ../sass/partials/_base.sass */
+/* line 77, ../sass/partials/_base.sass */
 #projects .project img {
   height: 320px;
   width: 100%;
@@ -181,7 +207,7 @@ header #properties p, footer #properties p {
   border-radius: 3px;
   box-shadow: 7px 6px 22px 2px black;
 }
-/* line 64, ../sass/partials/_base.sass */
+/* line 83, ../sass/partials/_base.sass */
 #projects .project .explanation {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -189,7 +215,7 @@ header #properties p, footer #properties p {
   height: 320px;
   display: none;
 }
-/* line 70, ../sass/partials/_base.sass */
+/* line 89, ../sass/partials/_base.sass */
 #projects .project .explanation p {
   color: white;
   position: relative;
@@ -197,11 +223,11 @@ header #properties p, footer #properties p {
   padding: 0px 48px;
   line-height: 1.5em;
 }
-/* line 76, ../sass/partials/_base.sass */
+/* line 95, ../sass/partials/_base.sass */
 #projects .project .explanation a {
   text-decoration: none;
 }
-/* line 78, ../sass/partials/_base.sass */
+/* line 97, ../sass/partials/_base.sass */
 #projects .project .explanation a p {
   color: white;
   position: relative;
@@ -215,73 +241,83 @@ header #properties p, footer #properties p {
   padding: 0px 23px;
   left: 29%;
 }
-/* line 88, ../sass/partials/_base.sass */
+/* line 107, ../sass/partials/_base.sass */
 #projects .project .explanation a p:hover {
   font-size: 1.7em;
 }
-/* line 90, ../sass/partials/_base.sass */
+/* line 109, ../sass/partials/_base.sass */
 #projects #side-projects {
   margin-top: 40px;
 }
 
-/* line 94, ../sass/partials/_base.sass */
+/* line 113, ../sass/partials/_base.sass */
 footer {
   height: 200px;
 }
-/* line 97, ../sass/partials/_base.sass */
+/* line 116, ../sass/partials/_base.sass */
 footer #social-media-wrapper {
   position: relative;
   text-align: center;
   top: 50px;
 }
-/* line 101, ../sass/partials/_base.sass */
+/* line 120, ../sass/partials/_base.sass */
 footer #social-media-wrapper a {
   margin: 15px;
 }
-/* line 103, ../sass/partials/_base.sass */
+/* line 122, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img {
   width: 100px;
   height: 100px;
 }
-/* line 106, ../sass/partials/_base.sass */
+/* line 125, ../sass/partials/_base.sass */
 footer #social-media-wrapper a img:hover {
   cursor: pointer;
   -webkit-animation: rotation 0.5s;
   -moz-animation: rotation 0.5s;
   animation: rotation 0.5s;
 }
-/* line 109, ../sass/partials/_base.sass */
+/* line 128, ../sass/partials/_base.sass */
 footer #copyright {
   color: rgba(255, 255, 255, 0.74);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* line 2, ../sass/partials/_smartphone.sass */
+  #projects {
+    margin: 215px 0px;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 3, ../sass/partials/_smartphone.sass */
+  /* line 7, ../sass/partials/_smartphone.sass */
   header img[alt="Cenk Yurtbilir"], footer img[alt="Cenk Yurtbilir"] {
     left: 12.7%;
   }
 
-  /* line 8, ../sass/partials/_smartphone.sass */
+  /* line 10, ../sass/partials/_smartphone.sass */
+  #projects {
+    margin: 215px 0px;
+  }
+  /* line 13, ../sass/partials/_smartphone.sass */
   #projects .project img {
     height: 231px;
   }
-  /* line 10, ../sass/partials/_smartphone.sass */
+  /* line 15, ../sass/partials/_smartphone.sass */
   #projects .project .explanation {
     height: 231px;
     bottom: 234px;
   }
-  /* line 13, ../sass/partials/_smartphone.sass */
+  /* line 18, ../sass/partials/_smartphone.sass */
   #projects .project .explanation p {
     top: 37px;
     padding: 0px 36px;
   }
-  /* line 17, ../sass/partials/_smartphone.sass */
+  /* line 22, ../sass/partials/_smartphone.sass */
   #projects .project .explanation a p {
     top: 19px;
     left: 15%;
   }
 
-  /* line 24, ../sass/partials/_smartphone.sass */
+  /* line 29, ../sass/partials/_smartphone.sass */
   footer #social-media-wrapper a img {
     width: 55px;
     height: 55px;
