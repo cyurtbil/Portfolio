@@ -154,13 +154,64 @@ header #properties p, footer #properties p {
   line-height: 2.25em;
 }
 
+/* line 55, ../sass/partials/_base.sass */
+#hamburger {
+  position: relative;
+  top: 380px;
+}
+/* line 58, ../sass/partials/_base.sass */
+#hamburger:hover {
+  cursor: pointer;
+}
 /* line 60, ../sass/partials/_base.sass */
+#hamburger .line {
+  color: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  width: 44px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.74);
+  margin: 6px auto;
+}
+
+/* line 70, ../sass/partials/_base.sass */
+.line1 {
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(90deg);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(90deg);
+  transform: rotateX(0) rotateY(0) rotateZ(90deg);
+  transition-duration: 0.2s;
+  position: relative;
+  top: 5px;
+}
+
+/* line 75, ../sass/partials/_base.sass */
+.line2 {
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(45deg);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(45deg);
+  transform: rotateX(0) rotateY(0) rotateZ(45deg);
+  transition-duration: 0.2s;
+  position: relative;
+  left: -14px;
+}
+
+/* line 80, ../sass/partials/_base.sass */
+.line3 {
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(-45deg);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(-45deg);
+  transform: rotateX(0) rotateY(0) rotateZ(-45deg);
+  transition-duration: 0.2s;
+  position: relative;
+  bottom: 10px;
+  left: 14px;
+}
+
+/* line 93, ../sass/partials/_base.sass */
 #social-media-wrapper {
   position: relative;
   text-align: center;
   top: 254px;
 }
-/* line 64, ../sass/partials/_base.sass */
+/* line 97, ../sass/partials/_base.sass */
 #social-media-wrapper a {
   color: rgba(255, 255, 255, 0.74);
   margin: 0px 7%;
@@ -172,48 +223,28 @@ header #properties p, footer #properties p {
   -moz-transition: border-bottom 0.5s ease;
   transition: border-bottom 0.5s ease;
 }
-/* line 72, ../sass/partials/_base.sass */
+/* line 105, ../sass/partials/_base.sass */
 #social-media-wrapper a:hover {
   border-bottom: 3px solid white;
 }
 
-/* line 78, ../sass/partials/_base.sass */
-#skills {
-  margin: 50px 0px;
-}
-/* line 80, ../sass/partials/_base.sass */
-#skills h1, #skills header #properties #developer, header #properties #skills #developer, #skills footer #properties #developer, footer #properties #skills #developer {
-  text-align: center;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.74);
-}
-/* line 84, ../sass/partials/_base.sass */
-#skills #skills-container {
-  width: 100%;
-  height: 100px;
-}
-/* line 87, ../sass/partials/_base.sass */
-#skills #skills-container span {
-  float: left;
-  border: 1px solid rgba(255, 255, 255, 0.74);
-  color: rgba(255, 255, 255, 0.74);
-  border-radius: 2px;
-  padding: 5px 10px;
-  margin-right: 1%;
-  margin-bottom: 10px;
+/* line 111, ../sass/partials/_base.sass */
+.row {
+  margin: 35px 0px;
 }
 
-/* line 97, ../sass/partials/_base.sass */
+/* line 114, ../sass/partials/_base.sass */
 #projects {
+  font-family: "Domine", serif;
   margin-top: 65px;
 }
-/* line 99, ../sass/partials/_base.sass */
+/* line 117, ../sass/partials/_base.sass */
 #projects h1, #projects header #properties #developer, header #properties #projects #developer, #projects footer #properties #developer, footer #properties #projects #developer {
   text-align: center;
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.74);
 }
-/* line 103, ../sass/partials/_base.sass */
+/* line 121, ../sass/partials/_base.sass */
 #projects h2 {
   color: rgba(255, 255, 255, 0.74);
   text-align: center;
@@ -221,11 +252,11 @@ header #properties p, footer #properties p {
   margin-bottom: 16px;
   margin-top: 35px;
 }
-/* line 109, ../sass/partials/_base.sass */
+/* line 127, ../sass/partials/_base.sass */
 #projects .project {
   height: 320px;
 }
-/* line 111, ../sass/partials/_base.sass */
+/* line 129, ../sass/partials/_base.sass */
 #projects .project img {
   height: 320px;
   width: 100%;
@@ -233,11 +264,11 @@ header #properties p, footer #properties p {
   border-radius: 3px;
   box-shadow: 7px 6px 22px 2px black;
 }
-/* line 117, ../sass/partials/_base.sass */
+/* line 135, ../sass/partials/_base.sass */
 #projects .explanation {
   color: rgba(255, 255, 255, 0.74);
 }
-/* line 119, ../sass/partials/_base.sass */
+/* line 137, ../sass/partials/_base.sass */
 #projects .explanation a {
   color: rgba(255, 255, 255, 0.74);
   text-decoration: none;
@@ -250,21 +281,21 @@ header #properties p, footer #properties p {
   margin-left: 15%;
   font-size: 1.3em;
 }
-/* line 128, ../sass/partials/_base.sass */
+/* line 146, ../sass/partials/_base.sass */
 #projects .explanation a:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.74);
 }
-/* line 130, ../sass/partials/_base.sass */
+/* line 148, ../sass/partials/_base.sass */
 #projects .explanation p {
   line-height: 1.75em;
 }
-/* line 133, ../sass/partials/_base.sass */
+/* line 151, ../sass/partials/_base.sass */
 #projects .explanation .tech h3 {
   font-size: 1.15em;
   text-decoration: underline;
   margin: 10px 0%;
 }
-/* line 137, ../sass/partials/_base.sass */
+/* line 155, ../sass/partials/_base.sass */
 #projects .explanation .tech span {
   border: 1px solid rgba(255, 255, 255, 0.74);
   padding: 4px 10px;
@@ -273,7 +304,7 @@ header #properties p, footer #properties p {
   display: inline-block;
 }
 
-/* line 144, ../sass/partials/_base.sass */
+/* line 162, ../sass/partials/_base.sass */
 footer {
   height: 225px;
   margin-top: 100px;

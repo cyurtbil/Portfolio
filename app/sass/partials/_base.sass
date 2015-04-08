@@ -51,6 +51,39 @@ header
       font-size: 1.5em
       top: 180px
       line-height: 2.25em
+
+#hamburger
+  position: relative
+  top: 380px
+  &:hover
+    cursor: pointer
+  .line
+    color: rgba(255, 255, 255, 0.74)
+    border: 1px solid rgba(255, 255, 255, 0.74)
+    width: 44px
+    height: 4px
+    border-radius: 5px
+    background-color: rgba(255, 255, 255, 0.74)
+    margin: 6px auto
+
+
+.line1
+  +rotate(0, 0, 90deg)
+  transition-duration: 0.2s
+  position: relative
+  top: 5px
+.line2
+  +rotate(0, 0, 45deg)
+  transition-duration: 0.2s
+  position: relative
+  left: -14px
+.line3
+  +rotate(0, 0, -45deg)
+  transition-duration: 0.2s
+  position: relative
+  bottom: 10px
+  left: 14px
+
 // ======================================
 
 
@@ -75,26 +108,11 @@ header
 // ======================================
 
 
-#skills
-  margin: 50px 0px
-  h1
-    text-align: center
-    font-size: 1.5em
-    color: rgba(255, 255, 255, 0.74)
-  #skills-container
-    width: 100%
-    height: 100px
-    span
-      float: left
-      border: 1px solid rgba(255, 255, 255, 0.74)
-      color: rgba(255, 255, 255, 0.74)
-      border-radius: 2px
-      padding: 5px 10px
-      margin-right: 1%
-      margin-bottom: 10px
-
+.row
+  margin: 35px 0px
 
 #projects
+  font-family: 'Domine', serif
   margin-top: 65px
   h1
     text-align: center
