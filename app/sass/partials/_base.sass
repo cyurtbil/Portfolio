@@ -1,6 +1,8 @@
+// ======================================
+// General
+// ======================================
 *
   box-sizing: border-box
-  font-family: "adelle",serif
   font-style: normal
   font-weight: 400
 
@@ -11,11 +13,17 @@ body
   -o-background-size: cover
   background-size: cover
 
+// ======================================
+
+
+// ======================================
+// About me
+// ======================================
 header
   width: 100%
-  height: 600px
+  height: 630px
   background-color: rgba(6, 170, 243, 0.31)
-  text-shadow: 6px 4px 7px rgb(38, 38, 38)
+  font-family: 'Domine', serif
   img
     position: relative
     &[alt="Cenk Yurtbilir"]
@@ -36,11 +44,36 @@ header
     #developer
       @extend h1
       top: 145px
+      line-height: 1.25em
     p
       color: rgba(255, 255, 255, 0.74)
       position: relative
       font-size: 1.5em
       top: 180px
+      line-height: 2.25em
+// ======================================
+
+
+// ======================================
+// Contact me
+// ======================================
+#social-media-wrapper
+  position: relative
+  text-align: center
+  top: 254px
+  a
+    color: rgba(255, 255, 255, 0.74)
+    margin: 0px 7%
+    text-decoration: none
+    display: inline-block
+    font-size: 1.5em
+    border-bottom: 3px solid transparent
+    +transition(border-bottom, 0.5s, ease)
+    &:hover
+      border-bottom: 3px solid white
+
+// ======================================
+
 
 #skills
   margin: 50px 0px
@@ -62,7 +95,7 @@ header
 
 
 #projects
-  // margin-bottom: 140px
+  margin-top: 65px
   h1
     text-align: center
     font-size: 1.5em
@@ -81,58 +114,41 @@ header
       border: 1px solid rgb(43, 43, 43)
       border-radius: 3px
       box-shadow: 7px 6px 22px 2px black
-    .explanation
-      background-color: rgba(0, 0, 0, 0.5)
-      position: relative
-      bottom: 324px
-      height: 320px
-      display: none
-      p
-        color: white
-        position: relative
-        top: 180px
-        padding: 0px 48px
-        line-height: 1.5em
-      a
-        text-decoration: none
-        p
-          color: white
-          position: relative
-          top: 130px
-          display: inline
-          width: 100%
-          +transition(font-size, 0.3s, ease)
-          font-size: 1.5em
-          padding: 0px 23px
-          left: 29%
-          &:hover
-            font-size: 1.7em
-  #side-projects
-    margin-top: 40px
-
+  .explanation
+    color: rgba(255, 255, 255, 0.74)
+    a
+      color: rgba(255, 255, 255, 0.74)
+      text-decoration: none
+      border-bottom: 3px solid transparent
+      +transition(border-bottom, 0.5s, ease)
+      display: inline-block
+      font-weight: bold
+      margin-left: 15%
+      font-size: 1.3em
+      &:hover
+        border-bottom: 3px solid rgba(255, 255, 255, 0.74)
+    p
+      line-height: 1.75em
+    .tech
+      h3
+        font-size: 1.15em
+        text-decoration: underline
+        margin: 10px 0%
+      span
+        border: 1px solid rgba(255, 255, 255, 0.74)
+        padding: 4px 10px
+        border-radius: 3px
+        margin: 5px 2px
+        display: inline-block
 
 footer
   @extend header
   height: 225px
   margin-top: 100px
-  p
-    text-align: center
-    color: rgba(255, 255, 255, 0.74)
-    font-size: 1.5em
-    position: relative
-    top: 18px
-    text-decoration: underline
-  #social-media-wrapper
-    position: relative
-    text-align: center
-    top: 50px
-    a
-      margin: 0px 7%
-      img
-        width: 100px
-        height: 100px
-        &:hover
-          cursor: pointer
-          +animation(rotation, 0.5s)
-  #copyright
-    color: rgba(255, 255, 255, 0.74)
+  // p
+  //   text-align: center
+  //   color: rgba(255, 255, 255, 0.74)
+  //   font-size: 1.5em
+  //   position: relative
+  //   top: 18px
+  //   text-decoration: underline
