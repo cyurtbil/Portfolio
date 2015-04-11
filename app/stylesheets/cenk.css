@@ -308,28 +308,32 @@ footer p {
     top: 20px;
   }
   /* line 8, ../sass/partials/_smartphone.sass */
+  header #properties p:nth-child(1), footer #properties p:nth-child(1) {
+    font-size: 2em;
+  }
+  /* line 10, ../sass/partials/_smartphone.sass */
   header #social-media-wrapper, footer #social-media-wrapper {
     top: 87px;
   }
-  /* line 10, ../sass/partials/_smartphone.sass */
+  /* line 12, ../sass/partials/_smartphone.sass */
   header #social-media-wrapper a, footer #social-media-wrapper a {
     margin: 0px 5%;
   }
-  /* line 12, ../sass/partials/_smartphone.sass */
+  /* line 14, ../sass/partials/_smartphone.sass */
   header #hamburger, footer #hamburger {
     top: 145px;
   }
 
-  /* line 16, ../sass/partials/_smartphone.sass */
+  /* line 18, ../sass/partials/_smartphone.sass */
   #projects {
     margin: 26px 0px;
   }
-  /* line 19, ../sass/partials/_smartphone.sass */
+  /* line 21, ../sass/partials/_smartphone.sass */
   #projects .project img {
     height: 231px;
   }
 
-  /* line 23, ../sass/partials/_smartphone.sass */
+  /* line 25, ../sass/partials/_smartphone.sass */
   footer p {
     font-size: 1.3em;
     top: 63px;
