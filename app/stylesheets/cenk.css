@@ -297,55 +297,39 @@ footer p {
   line-height: 1.7em;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  /* line 2, ../sass/partials/_smartphone.sass */
-  #projects {
-    margin: 215px 0px;
-  }
-
-  /* line 5, ../sass/partials/_smartphone.sass */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 3, ../sass/partials/_smartphone.sass */
   header, footer {
     font-size: 0.8em;
     padding: 0px 10px;
+  }
+  /* line 6, ../sass/partials/_smartphone.sass */
+  header #properties, footer #properties {
+    top: 20px;
   }
   /* line 8, ../sass/partials/_smartphone.sass */
-  header #properties, footer #properties {
-    top: 20px;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 13, ../sass/partials/_smartphone.sass */
-  header, footer {
-    font-size: 0.8em;
-    padding: 0px 10px;
-  }
-  /* line 16, ../sass/partials/_smartphone.sass */
-  header #properties, footer #properties {
-    top: 20px;
-  }
-  /* line 18, ../sass/partials/_smartphone.sass */
   header #social-media-wrapper, footer #social-media-wrapper {
     top: 87px;
   }
-  /* line 20, ../sass/partials/_smartphone.sass */
+  /* line 10, ../sass/partials/_smartphone.sass */
   header #social-media-wrapper a, footer #social-media-wrapper a {
     margin: 0px 5%;
   }
-  /* line 22, ../sass/partials/_smartphone.sass */
+  /* line 12, ../sass/partials/_smartphone.sass */
   header #hamburger, footer #hamburger {
     top: 145px;
   }
 
-  /* line 26, ../sass/partials/_smartphone.sass */
+  /* line 16, ../sass/partials/_smartphone.sass */
   #projects {
     margin: 26px 0px;
   }
-  /* line 29, ../sass/partials/_smartphone.sass */
+  /* line 19, ../sass/partials/_smartphone.sass */
   #projects .project img {
     height: 231px;
   }
 
-  /* line 33, ../sass/partials/_smartphone.sass */
+  /* line 23, ../sass/partials/_smartphone.sass */
   footer p {
     font-size: 1.3em;
     top: 63px;
