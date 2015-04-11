@@ -2,7 +2,7 @@
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
 /* line 3, ../sass/partials/_reset.sass */
 html, body, div, span, applet, object,
-iframe, h1, header #properties #developer, footer #properties #developer, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small,
 strike, strong, sub, sup, tt, var, b, u, i, center, dl,
@@ -116,54 +116,32 @@ header, footer {
   font-family: "Domine", serif;
 }
 /* line 27, ../sass/partials/_base.sass */
-header img, footer img {
-  position: relative;
-}
-/* line 29, ../sass/partials/_base.sass */
-header img[alt="Cenk Yurtbilir"], footer img[alt="Cenk Yurtbilir"] {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  left: 39.7%;
-  top: 70px;
-  box-shadow: 0px 1px 22px -5px #0E0F10;
-}
-/* line 36, ../sass/partials/_base.sass */
 header #properties, footer #properties {
   text-align: center;
-}
-/* line 38, ../sass/partials/_base.sass */
-header #properties h1, footer #properties h1, header #properties #developer, footer #properties #developer {
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 1.9em;
   position: relative;
-  text-align: center;
   top: 120px;
 }
-/* line 44, ../sass/partials/_base.sass */
-header #properties #developer, footer #properties #developer {
-  top: 145px;
-  line-height: 1.25em;
-}
-/* line 48, ../sass/partials/_base.sass */
+/* line 31, ../sass/partials/_base.sass */
 header #properties p, footer #properties p {
   color: rgba(255, 255, 255, 0.74);
-  position: relative;
-  font-size: 1.5em;
-  top: 180px;
+  font-size: 1.8em;
   line-height: 2.25em;
 }
+/* line 35, ../sass/partials/_base.sass */
+header #properties p:nth-child(1), footer #properties p:nth-child(1) {
+  font-size: 2.5em;
+}
 
-/* line 55, ../sass/partials/_base.sass */
+/* line 38, ../sass/partials/_base.sass */
 #hamburger {
   position: relative;
-  top: 380px;
+  top: 312px;
 }
-/* line 58, ../sass/partials/_base.sass */
+/* line 41, ../sass/partials/_base.sass */
 #hamburger:hover {
   cursor: pointer;
 }
-/* line 60, ../sass/partials/_base.sass */
+/* line 43, ../sass/partials/_base.sass */
 #hamburger .line {
   color: rgba(255, 255, 255, 0.74);
   border: 1px solid rgba(255, 255, 255, 0.74);
@@ -174,7 +152,7 @@ header #properties p, footer #properties p {
   margin: 6px auto;
 }
 
-/* line 70, ../sass/partials/_base.sass */
+/* line 53, ../sass/partials/_base.sass */
 .line1 {
   -webkit-transform: rotateX(0) rotateY(0) rotateZ(90deg);
   -moz-transform: rotateX(0) rotateY(0) rotateZ(90deg);
@@ -184,7 +162,7 @@ header #properties p, footer #properties p {
   top: 5px;
 }
 
-/* line 75, ../sass/partials/_base.sass */
+/* line 58, ../sass/partials/_base.sass */
 .line2 {
   -webkit-transform: rotateX(0) rotateY(0) rotateZ(45deg);
   -moz-transform: rotateX(0) rotateY(0) rotateZ(45deg);
@@ -194,7 +172,7 @@ header #properties p, footer #properties p {
   left: -14px;
 }
 
-/* line 80, ../sass/partials/_base.sass */
+/* line 63, ../sass/partials/_base.sass */
 .line3 {
   -webkit-transform: rotateX(0) rotateY(0) rotateZ(-45deg);
   -moz-transform: rotateX(0) rotateY(0) rotateZ(-45deg);
@@ -205,13 +183,13 @@ header #properties p, footer #properties p {
   left: 14px;
 }
 
-/* line 93, ../sass/partials/_base.sass */
+/* line 76, ../sass/partials/_base.sass */
 #social-media-wrapper {
   position: relative;
   text-align: center;
-  top: 254px;
+  top: 212px;
 }
-/* line 97, ../sass/partials/_base.sass */
+/* line 80, ../sass/partials/_base.sass */
 #social-media-wrapper a {
   color: rgba(255, 255, 255, 0.74);
   margin: 0px 7%;
@@ -223,28 +201,28 @@ header #properties p, footer #properties p {
   -moz-transition: border-bottom 0.5s ease;
   transition: border-bottom 0.5s ease;
 }
-/* line 105, ../sass/partials/_base.sass */
+/* line 88, ../sass/partials/_base.sass */
 #social-media-wrapper a:hover {
   border-bottom: 3px solid white;
 }
 
-/* line 111, ../sass/partials/_base.sass */
+/* line 94, ../sass/partials/_base.sass */
 .row {
   margin: 35px 0px;
 }
 
-/* line 114, ../sass/partials/_base.sass */
+/* line 97, ../sass/partials/_base.sass */
 #projects {
   font-family: "Domine", serif;
   margin-top: 65px;
 }
-/* line 117, ../sass/partials/_base.sass */
-#projects h1, #projects header #properties #developer, header #properties #projects #developer, #projects footer #properties #developer, footer #properties #projects #developer {
+/* line 100, ../sass/partials/_base.sass */
+#projects h1 {
   text-align: center;
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.74);
 }
-/* line 121, ../sass/partials/_base.sass */
+/* line 104, ../sass/partials/_base.sass */
 #projects h2 {
   color: rgba(255, 255, 255, 0.74);
   text-align: center;
@@ -252,11 +230,11 @@ header #properties p, footer #properties p {
   margin-bottom: 16px;
   margin-top: 35px;
 }
-/* line 127, ../sass/partials/_base.sass */
+/* line 110, ../sass/partials/_base.sass */
 #projects .project {
   height: 320px;
 }
-/* line 129, ../sass/partials/_base.sass */
+/* line 112, ../sass/partials/_base.sass */
 #projects .project img {
   height: 320px;
   width: 100%;
@@ -264,11 +242,11 @@ header #properties p, footer #properties p {
   border-radius: 3px;
   box-shadow: 7px 6px 22px 2px black;
 }
-/* line 135, ../sass/partials/_base.sass */
+/* line 118, ../sass/partials/_base.sass */
 #projects .explanation {
   color: rgba(255, 255, 255, 0.74);
 }
-/* line 137, ../sass/partials/_base.sass */
+/* line 120, ../sass/partials/_base.sass */
 #projects .explanation a {
   color: rgba(255, 255, 255, 0.74);
   text-decoration: none;
@@ -281,21 +259,21 @@ header #properties p, footer #properties p {
   margin-left: 15%;
   font-size: 1.3em;
 }
-/* line 146, ../sass/partials/_base.sass */
+/* line 129, ../sass/partials/_base.sass */
 #projects .explanation a:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.74);
 }
-/* line 148, ../sass/partials/_base.sass */
+/* line 131, ../sass/partials/_base.sass */
 #projects .explanation p {
   line-height: 1.75em;
 }
-/* line 151, ../sass/partials/_base.sass */
+/* line 134, ../sass/partials/_base.sass */
 #projects .explanation .tech h3 {
   font-size: 1.15em;
   text-decoration: underline;
   margin: 10px 0%;
 }
-/* line 155, ../sass/partials/_base.sass */
+/* line 138, ../sass/partials/_base.sass */
 #projects .explanation .tech span {
   border: 1px solid rgba(255, 255, 255, 0.74);
   padding: 4px 10px;
@@ -304,12 +282,12 @@ header #properties p, footer #properties p {
   display: inline-block;
 }
 
-/* line 162, ../sass/partials/_base.sass */
+/* line 145, ../sass/partials/_base.sass */
 footer {
   height: 225px;
   margin-top: 100px;
 }
-/* line 166, ../sass/partials/_base.sass */
+/* line 149, ../sass/partials/_base.sass */
 footer p {
   text-align: center;
   color: rgba(255, 255, 255, 0.74);
@@ -325,58 +303,51 @@ footer p {
     margin: 215px 0px;
   }
 
-  /* line 6, ../sass/partials/_smartphone.sass */
-  header img[alt="Cenk Yurtbilir"], footer img[alt="Cenk Yurtbilir"] {
-    left: 19.7%;
+  /* line 5, ../sass/partials/_smartphone.sass */
+  header, footer {
+    font-size: 0.8em;
+    padding: 0px 10px;
   }
-
-  /* line 11, ../sass/partials/_smartphone.sass */
-  footer #social-media-wrapper a {
-    margin: 0px 3%;
-  }
-  /* line 13, ../sass/partials/_smartphone.sass */
-  footer #social-media-wrapper a img {
-    width: 75px;
-    height: 75px;
+  /* line 8, ../sass/partials/_smartphone.sass */
+  header #properties, footer #properties {
+    top: 20px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 19, ../sass/partials/_smartphone.sass */
-  header img[alt="Cenk Yurtbilir"], footer img[alt="Cenk Yurtbilir"] {
-    left: 12.7%;
+  /* line 13, ../sass/partials/_smartphone.sass */
+  header, footer {
+    font-size: 0.8em;
+    padding: 0px 10px;
+  }
+  /* line 16, ../sass/partials/_smartphone.sass */
+  header #properties, footer #properties {
+    top: 20px;
+  }
+  /* line 18, ../sass/partials/_smartphone.sass */
+  header #social-media-wrapper, footer #social-media-wrapper {
+    top: 87px;
+  }
+  /* line 20, ../sass/partials/_smartphone.sass */
+  header #social-media-wrapper a, footer #social-media-wrapper a {
+    margin: 0px 5%;
+  }
+  /* line 22, ../sass/partials/_smartphone.sass */
+  header #hamburger, footer #hamburger {
+    top: 145px;
   }
 
-  /* line 22, ../sass/partials/_smartphone.sass */
+  /* line 26, ../sass/partials/_smartphone.sass */
   #projects {
-    margin: 215px 0px;
+    margin: 26px 0px;
   }
-  /* line 25, ../sass/partials/_smartphone.sass */
+  /* line 29, ../sass/partials/_smartphone.sass */
   #projects .project img {
     height: 231px;
   }
-  /* line 27, ../sass/partials/_smartphone.sass */
-  #projects .project .explanation {
-    height: 231px;
-    bottom: 234px;
-  }
-  /* line 30, ../sass/partials/_smartphone.sass */
-  #projects .project .explanation p {
-    top: 37px;
-    padding: 0px 36px;
-  }
-  /* line 34, ../sass/partials/_smartphone.sass */
-  #projects .project .explanation a p {
-    top: 19px;
-    left: 15%;
-  }
 
-  /* line 40, ../sass/partials/_smartphone.sass */
-  footer #social-media-wrapper a {
-    margin: 0px 3%;
-  }
-  /* line 42, ../sass/partials/_smartphone.sass */
-  footer #social-media-wrapper a img {
-    width: 55px;
-    height: 55px;
+  /* line 33, ../sass/partials/_smartphone.sass */
+  footer p {
+    font-size: 1.3em;
+    top: 63px;
   }
 }
